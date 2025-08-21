@@ -30,3 +30,21 @@ libs/
 
 apps/
 ├── landing-page/          ← osobna aplikacja w Nx (Next.js lub Angular SSR)
+
+---
+
+apps/
+  fino-app/
+    src/app/
+      app.routes.ts
+      features/
+        transactions/
+        summary/
+        home/
+      shared/
+      core/
+libs/
+  ui/
+  models/
+  utils/
+  state/
