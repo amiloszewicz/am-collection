@@ -3,25 +3,25 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/fino/src",
+  "sourceRoot": "apps/fino-app/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/fino",
-        "browser": "apps/fino/src/main.ts",
+        "outputPath": "dist/apps/fino-app",
+        "browser": "apps/fino-app/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/fino/tsconfig.app.json",
+        "tsConfig": "apps/fino-app/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/fino/public"
+            "input": "apps/fino-app/public"
           }
         ],
-        "styles": ["apps/fino/src/styles.scss"]
+        "styles": ["apps/fino-app/src/styles.scss"]
       },
       "configurations": {
         "production": {
@@ -74,7 +74,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "fino:build",
-        "staticFilePath": "dist/apps/fino/browser",
+        "staticFilePath": "dist/apps/fino-app/browser",
         "spa": true
       }
     }
