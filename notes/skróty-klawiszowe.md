@@ -6,7 +6,7 @@
 
 ## Nx
 
-| Skrót                                                                                     |                                                            Opis |
-| :---------------------------------------------------------------------------------------- | --------------------------------------------------------------: |
-| nx g app ...                                                                              |                                                           #same |
-| nx g @nx/angular:application apps/budget-tracker --standalone --inline-style --style=scss | Generuje angular aplikacje w <folder-name>/<app-name> --prefixy |
+| Skrót                             |                        Opis |
+| :-------------------------------- | --------------------------: |
+| nx g @nx/angular:app apps/appName |  Generuje aplikacje Angular |
+| nx g @nx/angular:lib libs/libName | Generuje bibliotekę Angular |
